@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="user_name">20dp</dimen>
+    <dimen name="user_citizen">20dp</dimen>
+    <dimen name="dimen_refresh">12dp</dimen>
+    <dimen name="dimen_current_date">14dp</dimen>
+    <dimen name="dimen_current_time">14dp</dimen>
+    <dimen name="dimen_license_str">13dp</dimen>
+    <dimen name="dimen_license">20dp</dimen>
+    <dimen name="dimen_expire_str">13dp</dimen>
+    <dimen name="dimen_expire">20dp</dimen>
+    <dimen name="dimen_birth_str">12dp</dimen>
+    <dimen name="dimen_birthday">18dp</dimen>
+</resources>
