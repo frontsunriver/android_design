@@ -1,17 +1,17 @@
 <resources>
-    <string name="app_name">Show License</string>
-    <string name="button_show_license">Show the license</string>
-    <string name="user_name">Steve</string>
-    <string name="user_citizen">CITIZEN</string>
+    <string name="app_name">Show ID</string>
+    <string name="button_show_license">הצג תעודה</string>
+    <string name="user_name">לירן בן חיים</string>
+    <string name="user_citizen">אזרח</string>
     <string name="refresh">Refreshed</string>
     <string name="current_date">01 Dec 2022</string>
     <string name="current_time">11:50 pm</string>
-    <string name="license_number_str">LICENSE NUMBER</string>
-    <string name="license_number">12345678</string>
-    <string name="expire_str">EXPIRE</string>
-    <string name="expire_date">12 May 2023</string>
-    <string name="birth_str">DATE OF BIRTH</string>
-    <string name="birthday">10 May 1993</string>
-    <string name="class_str">CLASS</string>
+    <string name="license_number_str">מספר ת.ז</string>
+    <string name="license_number">029576014</string>
+    <string name="expire_str">בתוקף עד</string>
+    <string name="expire_date">12 May 2025</string>
+    <string name="birth_str">תאריך לידה</string>
+    <string name="birthday">08/08/1972</string>
+    <string name="class_str">בורוכוב 35 חיפה</string>
     <string name="condition_str">CONDITION</string>
 </resources>
