@@ -14,4 +14,5 @@
     <string name="birthday">08/08/1972</string>
     <string name="class_str">בורוכוב 35 חיפה</string>
     <string name="condition_str">CONDITION</string>
+    <string name="new_text">New Text</string>
 </resources>
