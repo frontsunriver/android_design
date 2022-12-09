@@ -12,4 +12,8 @@
     <color name="refresh">#838990</color>
     <color name="license_str_color">#19222d</color>
     <color name="license_color">#1e2f58</color>
+    <color name="primary">#565CE3</color>
+    <color name="border_color">#D0D5DD</color>
+    <color name="keyboard_background_color">#313131</color>
+    <color name="keyboard_color">#434343</color>
 </resources>

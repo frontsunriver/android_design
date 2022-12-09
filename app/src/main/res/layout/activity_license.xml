@@ -4,8 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".License"
-    android:background="@drawable/background">
+    tools:context=".License">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/id_background"
+        android:background="@drawable/background">
+    </ImageView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,259 +22,312 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/license_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="&lt;"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/new_text"/>
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textFontWeight="700"
+                android:paddingRight="10dp"
+                android:text="@string/license_title"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:orientation="horizontal">
+            android:background="@drawable/layout_shape"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:elevation="10dp"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:paddingRight="5dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:layout_gravity="right"
-                    android:textSize="@dimen/dimen_refresh"
-                    android:textColor="@color/refresh"
-                    android:fontFamily="sans-serif-medium"
-                    android:textFontWeight="700"
-                    android:text="@string/refresh"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:layout_gravity="right"
-                    android:textColor="@color/refresh"
-                    android:textSize="@dimen/dimen_current_date"
-                    android:fontFamily="sans-serif-medium"
-                    android:textFontWeight="700"
-                    android:text="@string/current_date"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:layout_gravity="right"
-                    android:textColor="@color/refresh"
-                    android:textSize="@dimen/dimen_current_time"
-                    android:fontFamily="sans-serif-medium"
-                    android:textFontWeight="700"
-                    android:text="@string/current_time"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="vertical">
-
-
-                <ImageView
-                    android:layout_marginTop="5dp"
-                    android:layout_width="180dp"
-                    android:layout_height="180dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/face" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="@string/user_name"
-                    android:textColor="@color/user_name"
-                    android:textFontWeight="950"
-                    android:textSize="@dimen/user_name" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="@string/user_citizen"
-                    android:textColor="@color/user_citizen"
-                    android:textFontWeight="950"
-                    android:textSize="@dimen/user_citizen" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:orientation="horizontal">
 
-                <pl.droidsonroids.gif.GifImageView
-                    android:layout_width="62dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/flag" />
-            </LinearLayout>
-
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/qr_code"/>
+                    android:paddingLeft="10dp"
+                    android:orientation="horizontal">
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:orientation="vertical">
+<!--                    <pl.droidsonroids.gif.GifImageView-->
+<!--                        android:layout_width="62dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:background="@drawable/flag" />-->
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/logo"/>
+                </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginBottom="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/face"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:shapeAppearanceOverlay="@style/RoundedSquare" />
+
+                    <TextView
+                        android:id="@+id/id_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/user_name"
+                        android:textColor="@color/user_name"
+                        android:textFontWeight="950"
+                        android:textSize="@dimen/user_name" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/user_citizen"
+                        android:textColor="@color/user_citizen"
+                        android:textFontWeight="950"
+                        android:textSize="@dimen/user_citizen" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:textSize="@dimen/dimen_refresh"
+                        android:textColor="@color/refresh"
+                        android:fontFamily="sans-serif-medium"
+                        android:textFontWeight="700"
+                        android:text="@string/refresh"/>
+                    <TextView
+                        android:id="@+id/id_current_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:textColor="@color/refresh"
+                        android:textSize="@dimen/dimen_current_date"
+                        android:fontFamily="sans-serif-medium"
+                        android:textFontWeight="700"
+                        android:text="@string/current_date"/>
+                    <TextView
+                        android:id="@+id/id_current_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:textColor="@color/refresh"
+                        android:textSize="@dimen/dimen_current_time"
+                        android:fontFamily="sans-serif-medium"
+                        android:textFontWeight="700"
+                        android:text="@string/current_time"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#e2e2e2"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
+                    android:layout_weight="3"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
-                            android:layout_gravity="right"
-                            android:text="@string/license_number_str"
-                            android:textColor="@color/license_str_color"
-                            android:textSize="@dimen/dimen_license_str"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/license_number"
-                            android:layout_gravity="right"
-                            android:textColor="@color/license_color"
-                            android:textSize="@dimen/dimen_license" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:layout_gravity="right"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="right"
-                            android:text="@string/expire_str"
-                            android:textColor="@color/license_str_color"
-                            android:textSize="@dimen/dimen_expire_str" />
+                            android:orientation="vertical">
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:layout_gravity="left"
+                                android:text="@string/license_number_str"
+                                android:textColor="@color/license_str_color"
+                                android:textSize="@dimen/dimen_license_str"/>
+
+                            <TextView
+                                android:id="@+id/license_str"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/license_number"
+                                android:layout_gravity="left"
+                                android:textColor="@color/license_color"
+                                android:textSize="@dimen/dimen_license" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="right"
-                            android:text="@string/expire_date"
-                            android:textColor="@color/license_color"
-                            android:textSize="@dimen/dimen_expire" />
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="@string/expire_str"
+                                android:textColor="@color/license_str_color"
+                                android:textSize="@dimen/dimen_expire_str" />
+
+                            <TextView
+                                android:id="@+id/expire_str"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="@string/expire_date"
+                                android:textColor="@color/license_color"
+                                android:textSize="@dimen/dimen_expire" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id = "@+id/qr_image_view"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/gradient_shape" />
+
+                </LinearLayout>
             </LinearLayout>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/dimen_birth_str"
-                    android:layout_gravity="right"
-                    android:textColor="@color/license_str_color"
-                    android:text="@string/birth_str"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:textSize="@dimen/dimen_birthday"
-                    android:textColor="@color/license_color"
-                    android:text="@string/birthday"/>
-
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_weight="1"
-                    android:text="@string/class_str"
-                    android:textColor="@color/license_str_color" />
+                    android:padding="20dp"
+                    android:orientation="vertical">
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dimen_birth_str"
+                        android:layout_gravity="left"
+                        android:textColor="@color/license_str_color"
+                        android:text="@string/birth_str"/>
+
+                    <TextView
+                        android:id="@+id/id_birth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:textSize="@dimen/dimen_birthday"
+                        android:textColor="@color/license_color"
+                        android:text="@string/birthday"/>
+
+                </LinearLayout>
             </LinearLayout>
 
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="right"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="@string/class_str"-->
+<!--                        android:textColor="@color/license_str_color" />-->
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
         </LinearLayout>
+
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

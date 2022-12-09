@@ -15,4 +15,17 @@
     <string name="class_str">בורוכוב 35 חיפה</string>
     <string name="condition_str">CONDITION</string>
     <string name="new_text">New Text</string>
+    <string name="pincode_str">Enter 4 Digit PIN Code</string>
+    <string name="dialog_pin_error_message">Please fill in the correct code.</string>
+    <string name="card_text1">Replace All Plastic Cards</string>
+    <string name="card_text2">And Manage It On Your</string>
+    <string name="card_text3">Smartphone</string>
+    <string name="message_text1">Conguratulation ! You Have</string>
+    <string name="message_text2">Been Registered</string>
+    <string name="license_title">NSW Driver License</string>
+    <string name="add_cards_title">Add Cards</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="change_pin">Change Pin</string>
+    <string name="setting_title">Setting</string>
 </resources>

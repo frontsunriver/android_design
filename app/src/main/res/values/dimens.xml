@@ -11,4 +11,5 @@
     <dimen name="dimen_expire">20dp</dimen>
     <dimen name="dimen_birth_str">12dp</dimen>
     <dimen name="dimen_birthday">18dp</dimen>
+    <dimen name="title_text_size">20dp</dimen>
 </resources>
