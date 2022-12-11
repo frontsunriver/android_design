@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Show ID</string>
+    <string name="app_name">הצג תיעוד</string>
     <string name="button_show_license">הצג תעודה</string>
     <string name="user_name">לירן בן חיים</string>
     <string name="user_citizen">אזרח</string>
-    <string name="refresh">Refreshed</string>
+    <string name="refresh">עודכן</string>
     <string name="current_date">01 Dec 2022</string>
     <string name="current_time">11:50 pm</string>
     <string name="license_number_str">מספר ת.ז</string>
@@ -15,17 +15,23 @@
     <string name="class_str">בורוכוב 35 חיפה</string>
     <string name="condition_str">CONDITION</string>
     <string name="new_text">New Text</string>
-    <string name="pincode_str">Enter 4 Digit PIN Code</string>
+    <string name="pincode_str">הקלד קוד כניסה</string>
     <string name="dialog_pin_error_message">Please fill in the correct code.</string>
     <string name="card_text1">Replace All Plastic Cards</string>
     <string name="card_text2">And Manage It On Your</string>
     <string name="card_text3">Smartphone</string>
-    <string name="message_text1">Conguratulation ! You Have</string>
-    <string name="message_text2">Been Registered</string>
-    <string name="license_title">NSW Driver License</string>
-    <string name="add_cards_title">Add Cards</string>
+    <string name="message_text1">הרישום בוצע</string>
+    <string name="message_text2">בהצלחה</string>
+    <string name="license_title">נתוני אימות</string>
+    <string name="add_cards_title">בחר כרטיס להוספה</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="change_pin">Change Pin</string>
-    <string name="setting_title">Setting</string>
+    <string name="change_pin">שינוי סיסמא</string>
+    <string name="setting_title">הגדרות</string>
+    <string name="str_approve_age">Approve Age</string>
+    <string name="str_add_card">Add Card</string>
+    <string name="str_display_card">Display Card</string>
+    <string name="str_setting">Setting</string>
+    <string name="str_verify">Verify</string>
+    <string name="str_display_id">Display ID</string>
 </resources>

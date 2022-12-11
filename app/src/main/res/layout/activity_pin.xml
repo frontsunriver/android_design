@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_corner"
                 android:textSize="@dimen/title_text_size"
-                android:text="OK" />
+                android:text="אישור" />
 
         </LinearLayout>
 

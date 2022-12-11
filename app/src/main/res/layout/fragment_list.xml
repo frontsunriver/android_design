@@ -27,11 +27,11 @@
                 <com.google.android.material.imageview.ShapeableImageView
                     android:layout_marginTop="5dp"
                     android:layout_width="40dp"
-                    android:layout_height="80dp"
+                    android:layout_height="100dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:scaleType="fitXY"
-                    android:src="@drawable/face"
+                    android:src="@drawable/drive"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:shapeAppearanceOverlay="@style/RoundedSquare" />
 
@@ -51,7 +51,7 @@
                         android:textFontWeight="700"
                         android:textColor="@color/black"
                         android:gravity="left"
-                        android:text="@string/user_name"/>
+                        android:text="רשיון נהיגה"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -61,10 +61,100 @@
                         android:textFontWeight="700"
                         android:textColor="@color/primary"
                         android:gravity="left"
-                        android:text="@string/user_citizen"/>
+                        android:text="משרד התחבורה"/>
                 </LinearLayout>
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/oldcit"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:shapeAppearanceOverlay="@style/RoundedSquare" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:textSize="20dp"
+                        android:textFontWeight="700"
+                        android:textColor="@color/black"
+                        android:gravity="left"
+                        android:text="תעודת אזרח ותיק"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:textSize="20dp"
+                        android:textFontWeight="700"
+                        android:textColor="@color/primary"
+                        android:gravity="left"
+                        android:text="המשרד לשוויון חברתי"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:shapeAppearanceOverlay="@style/RoundedSquare" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:textSize="20dp"
+                        android:textFontWeight="700"
+                        android:textColor="@color/black"
+                        android:gravity="left"
+                        android:text="תעודת נכה"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:textSize="20dp"
+                        android:textFontWeight="700"
+                        android:textColor="@color/primary"
+                        android:gravity="left"
+                        android:text="ביטוח לאומי"/>
+                </LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
 
